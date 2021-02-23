@@ -1,0 +1,57 @@
+.userProfileContainer{
+    .profilePara{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #profileDetails{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .profileDetails{
+        width: 75%;
+        padding: 0 5%;
+        background-color: #F4F7FA;
+    }
+    .profileDisplay{
+        display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    }
+    .profileImage{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        background-color: #12324B;
+    border-radius: 10px 0 0 10px;
+    }
+    #mPic{
+        margin: auto;
+        width: 120px;
+    height: 120px;
+    }
+    #mName{
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    #mId{
+        margin: auto;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    #mMail , #mPhTxt {
+        margin: auto 10px;
+    }
+    #mentorMail , #mPh {
+        display: flex;
+        margin-bottom: 5px;
+    }
+    @media screen and (max-width: 600px) {
+        #mPic{
+            margin: auto;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

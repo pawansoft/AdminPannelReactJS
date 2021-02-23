@@ -1,0 +1,74 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  .login-picture {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+    .login-image {
+      width: 80%;
+    }
+  }
+  .login-from-container {
+    background-color: $login-from-background-color;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+    .login-from {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: $break-large) {
+        width: 60%;
+      }
+      @media screen and (max-width: $break-medium) {
+        width: 80%;
+      }
+      .lms-image {
+        width: 30%;
+      }
+      .login-heading {
+        font-family: "Raleway", sans-serif;
+      }
+      .login-sub-heading {
+        text-align: center;
+        margin: 5px 0 10px;
+        font-family: "Lato", sans-serif;
+      }
+      .login-email {
+        margin: 20px 0 20px;
+      }
+      .login-password {
+        margin: 20px 0 0;
+      }
+      .forgot-password {
+        width: 100%;
+        .forgot-password-text {
+          float: right;
+          cursor: pointer;
+          &:hover {
+            color: blue;
+          }
+        }
+      }
+      .login-button {
+        background-color: $color-button;
+        color: $color-white;
+        text-transform: none;
+        margin: 25px 0 0;
+      }
+    }
+  }
+}

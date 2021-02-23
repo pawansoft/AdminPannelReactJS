@@ -1,0 +1,45 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.sideNavBar-container {
+  .sideNavBar-list {
+    padding: 0;
+
+    .sideNav-list-item {
+      height: 40px;
+      box-sizing: border-box;
+      border-left: 5px solid $color-white;
+      padding-left: 10px;
+      justify-content: flex-start;
+    }
+    .list-item-icon {
+      min-width: 30px;
+      @media screen and (max-width: $break-small) {
+        min-width: 23px;
+      }
+      .list-icon {
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        padding: 2px;
+      }
+    }
+    .list-item-icon.list-item-icon-active {
+      color: $color-sidenav-active-border;
+    }
+    .list-item-text {
+      display: none;
+    }
+    .list-item-text.sideNav-list-item-text-active { 
+      display: block;
+    }
+  }
+  .sideNav-list-item.sideNav-list-item-active {
+    color: $color-sidenav-active-border;
+    border-left: 5px solid $color-sidenav-active-border;
+    background-color: $color-sidenav-active-background;
+  }
+}
+.icon-width-navbar {
+  width: 18px;
+}

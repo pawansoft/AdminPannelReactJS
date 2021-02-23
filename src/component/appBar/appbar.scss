@@ -1,0 +1,64 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.appbar-container {
+  height: 75px;
+  border-bottom: 1px solid $color-lightgray;
+  display: flex;
+  @media screen and (max-width: $break-xsmall) {
+    height: 50px;
+  }
+  .app-picture {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    .lms-logo {
+      width: 30%;
+      height: 90%;
+      @media screen and (max-width: $break-medium) {
+        width: 37%;
+      }
+      @media screen and (max-width: $break-xsmall) {
+        height: 30px;
+      }
+    }
+  }
+  .app-prifile-button {
+    padding: 0 25px 0 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .appbar-action-button {
+      .profile-icon-button {
+        padding: 8px;
+        // float: right;
+        background-color: $appbar-profile-button-background-color;
+      }
+    }
+  }
+}
+.profile-card {
+  position: absolute;
+  right: 25px;
+  .profile-contant {
+    display: flex;
+    align-items: center;
+    .person-picture {
+      .person-image {
+        width: 30px;
+        border-radius: 50%;
+      }
+    }
+    .profile-contant-details {
+      margin: 0 0 0 10px;
+    }
+  }
+  .profile-card-actions {
+    .logout {
+      background-color: $color-button;
+      color: $color-white;
+      text-transform: none;
+    }
+  }
+}

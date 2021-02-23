@@ -1,0 +1,76 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.main-dashboard-container {
+  width: 90%;
+  margin: 20px auto;
+  .main-dashboard-container-header {
+    margin: 0 0 0 1%;
+  }
+  .all-cource-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 0;
+    .each-cource {
+      width: 18%; 
+      margin: 10px 1%;
+      @media screen and (max-width: $break-large) {
+        width: 23%;
+      }
+      @media screen and (max-width: $break-medium) {
+        width: 31%;
+      }
+      @media screen and (max-width: $break-small) {
+        width: 48%;
+      }
+      @media screen and (max-width: $break-xsmall) {
+        width: 98%;
+      }
+      .each-cource-contant {
+        padding: 8px 10px;
+        .cource-title-action {
+          display: flex;
+          justify-content: space-between;
+          .cource-title {
+            margin: 0 10px 0 0;
+            min-height: 40px;
+          }
+          .cource-action-button {
+            padding: 0;
+            height: 20px;
+            width: 20px;
+          }
+        }
+        .cource-student-mentor {
+          margin: 15px 0 0;
+          display: flex;
+          .cource-student {
+            width: 50%;
+            box-sizing: border-box;
+            border-right: 1px solid $color-lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .cource-mentor {
+            width: 50%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+#cource-menu {
+    div.MuiPaper-elevation0{
+       border: 1px solid;
+       ul{
+           padding: 0;
+       }
+    }
+}

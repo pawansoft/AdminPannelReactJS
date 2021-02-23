@@ -1,0 +1,84 @@
+@import "../../colors";
+@import "../../breakPoints";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  .dashboard-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-white;
+    z-index: 1;
+  }
+  .dashboard-body {
+    margin: 75px 0 0;
+    display: flex;
+    @media screen and (max-width: $break-xsmall) {
+      margin: 50px 0 0;
+    }
+    .dashboard-side-navbar {
+      width: 4%;
+      height: calc(100% - 75px);
+      position: fixed;
+      border-right: 1px solid $color-lightgray;
+      border-top: 1px solid $color-lightgray;
+      box-sizing: border-box;
+      background-color: $color-white;
+      z-index: 5;
+      @media screen and (max-width: $break-large) {
+        width: 6%;
+      }
+      @media screen and (max-width: $break-medium) {
+        width: 8%;
+      }
+      @media screen and (max-width: $break-small) {
+        width: 10%;
+      }
+      @media screen and (max-width: $break-xsmall) {
+        width: 15%;
+      }
+    }
+    .dashboard-side-navbar.dashboard-side-navbar-active {
+      width: 20%;
+      @media screen and (max-width: $break-medium) {
+        width: 25%;
+      }
+      @media screen and (max-width: $break-small) {
+        width: 32%;
+      }
+      @media screen and (max-width: $break-xsmall) {
+        width: 45%;
+      }
+    }
+    .dashboard-details {
+      margin: 0 0 0 4%;
+      flex-grow: 1;
+      @media screen and (max-width: $break-large) {
+        margin: 0 0 0 6%;
+      }
+      @media screen and (max-width: $break-medium) {
+        margin: 0 0 0 8%;
+      }
+      @media screen and (max-width: $break-small) {
+        margin: 0 0 0 10%;
+      }
+      @media screen and (max-width: $break-xsmall) {
+        margin: 0 0 0 15%;
+      }
+    }
+    .dashboard-details.dashboard-details-shift {
+      margin: 0 0 0 20%;
+      @media screen and (max-width: $break-medium) {
+        margin: 0 0 0 25%;
+      }
+      @media screen and (max-width: $break-small) {
+        margin: 0 0 0 32%;
+      }
+      @media screen and (max-width: $break-xsmall) {
+        margin: 0 0 0 15%;
+      }
+    }
+  }
+}

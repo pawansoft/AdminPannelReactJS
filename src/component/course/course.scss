@@ -1,0 +1,113 @@
+.outer-container-course {
+  width: 90%;
+  margin: 0 auto;
+}
+.box-content-course {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  form {
+    margin-top: 31px;
+    width: 70%;
+    .text-fields-student {
+      margin: 1px 0px;
+      width: 100%;
+      .MuiFormControl-root {
+        margin: 8px auto !important;
+        width: 100% !important;
+      }
+    }
+    .student-buttton-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 14px 0px;
+      .student-form-cancel-button {
+        width: 122px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #008cff;
+        border-radius: 3px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+      }
+      .student-form-add-button {
+        width: 122px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #008cff;
+        color: white;
+        border-radius: 3px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.single-card-course {
+  margin: 9px;
+  min-width: 225px;
+  width: 30%;
+  height: 113px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dee5ee;
+  border-radius: 11px;
+  .course-card-title-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 64%;
+    Button {
+      padding: 0 !important;
+      height: 29px !important;
+    }
+    .course-card-title {
+      padding: 3%;
+      font-size: 16px;
+    }
+  }
+
+  .course-card-code {
+    padding: 8px;
+  }
+ 
+}
+.outer-course-map-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  
+}
+.outer-card-container {
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .outer-card-container {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .single-card-course {
+    width: 99% !important;
+    margin-bottom: 12px;
+  }
+  .course-card-title {
+    padding: 3%;
+  }
+  .header-student {
+    flex-direction: column !important;
+    .header-student-text {
+      margin: 12px 0px;
+    }
+  }
+}

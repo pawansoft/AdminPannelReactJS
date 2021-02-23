@@ -1,0 +1,104 @@
+   
+.mentorContainer{
+    width: 90%;
+    margin: 20px auto;
+    font-family: lato;
+    #firstPart{
+        display: flex;
+        justify-content: space-between;
+    }
+    #mentorBtn{
+        background-color: #008CFF;
+        font-size: 10px;
+        margin: auto 0px;
+    }
+    #mentorPara{
+        font-weight: 700;
+    }
+    .MuiPaper-root{
+        width: 16% !important;
+        height: 250px;
+    }
+    #displayArea{
+        display: flex;
+        padding-bottom: 2px !important;
+        padding: 10px;
+    }
+    #cardContain{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #mentorName{
+        margin: 2px 15px !important ;
+    }
+    #mentorId , #mentorMail {
+        font-size: 11px;
+        margin: 2px 15px;
+        color: #ADADAD;
+    }
+    .divide{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #borderDiv{
+        width: 87%;
+        border: 1px solid #ADADAD;
+        margin: 0 auto;
+    }
+    #content{
+        display: flex;
+        font-size: 10px;
+        justify-content: space-between;
+        padding: 0 6%;
+    }
+    #cName , #nStud{
+        font-size: 12px;
+        color: #ADADAD;
+    }
+    #classContainer{
+        display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #00000029;
+    background-color: #F5F5F5;
+    height: 30px;
+    }
+    #studNumber{
+        background-color: #008CFF;
+    border-radius: 80px;
+    height: 15px;
+    margin: 8px;
+    }
+    #studN{
+        margin: 0 5px;
+        font-size: 13px;
+        color: white;
+    }
+    #course{
+        margin: 5px;
+    }
+    #firstPart , #cardContain {
+    margin: 0 auto;
+    }
+    .iconButtonMenu{
+        padding: 0 !important;
+    }
+    .openMenu{
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    .eachMentorCard{
+        width: 22% !important ;
+        margin: 10px 1%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .mentorContainer{
+    .MuiPaper-root{
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+}
